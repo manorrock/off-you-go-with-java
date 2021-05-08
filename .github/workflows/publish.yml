@@ -21,8 +21,8 @@ jobs:
         gitbook build
         git clone https://${{ secrets.GIT_USERNAME }}:${{ secrets.GIT_PASSWORD }}@github.com/manorrock/website
         cd website
-        mkdir -p off-you-go/java || true
-        cd off-you-go/java
+        mkdir -p book/off-you-go-with-java || true
+        cd book/off-you-go-with-java
         rm -rf *
         mv ../../../_book/* .
         ls 
