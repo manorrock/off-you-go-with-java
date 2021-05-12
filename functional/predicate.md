@@ -4,9 +4,15 @@
 
 object form
 
-## Lamda expression form a Predicate
+## Lamda expression form of a Predicate
 
-lambda expression
+A Predicate can be written in lambda form as illustrated below
+
+```java
+  Predicate<Integer> predicate = e -> e % 2 == 0;
+```
+
+The example above creates a predicate that could be used to test whether an integer is odd or even.
 
 ## Using a predicate for testing
 
