@@ -2,11 +2,22 @@
 
 ## Object form of a Predicate
 
-object form
+A predicate can be written in object form as seen below.
+
+```java
+  public class EvenPredicate implements Predicate<Integer> {
+
+    public boolean test(Integer intValue) {
+      return intValue.intValue() % 2 == 0;
+    }
+  }
+```
+
+The example above creates a predicate using the object form and it can be used to test whether an integer is odd or even.
 
 ## Lambda expression form of a predicate
 
-A predicate can be written in lambda expression form as illustrated below
+A predicate can be written in lambda expression form as illustrated below.
 
 ```java
   Predicate<Integer> even = e -> e % 2 == 0;
@@ -23,7 +34,7 @@ A predicate can be used for testing using its test method as shown below.
   even.test(1);
 ```
 
-The example above illustrates how the predicate can be used to test if a given integer is even. If it is it would return `true`, if it is not it would return `false`.
+The example above illustrates how the predicate can be used to test if a given integer is even. If the integer is even it would return `true`, if the integer is not even it would return `false`.
 
 ## Negating a predicate
 
