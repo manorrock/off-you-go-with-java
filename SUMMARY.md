@@ -4,7 +4,7 @@
 ## Functional Java
 
 * [Predicate](functional/predicate.md)
- * [Lambda expression](functional/predicate.md#lamda_expression_form_of_a_predicate)
+ * [Lambda expression](functional/predicate.md#lambda_expression_form_of_a_predicate)
 
 ## Streams
 
