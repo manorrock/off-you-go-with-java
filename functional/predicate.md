@@ -7,8 +7,8 @@ A predicate can be written in class form as seen below.
 ```java
   public class EvenPredicate implements Predicate<Integer> {
 
-    public boolean test(Integer intValue) {
-      return intValue.intValue() % 2 == 0;
+    public boolean test(Integer value) {
+      return value.intValue() % 2 == 0;
     }
   }
 ```
@@ -43,14 +43,21 @@ A static method that wraps an existing predicate and negates the boolean result.
 ```java
   Predicate<Integer> even = e -> e % 2 == 0;
   Predicate<Integer> notEven = Predicate.not(even);
-  notEven(1);
+  notEven.test(1);
 ```
 
 The example above illustrates how to negate the `even` predicate making it the `notEven` predicate as illustrated.
 
 ## Testing equality using a predicate
 
-isEqual method
+A static method that returns a predicate that will perform an `.equals` check against the given object.
+
+```java
+  Predicate<Integer> isZero = Predicate.isEqual(0);
+  isZero.test(0);
+```
+
+The example above creates a predicate that can be used to determine if a given number is equals to `0`.
 
 ## Combining predicates using a logical AND
 
