@@ -61,7 +61,16 @@ The example above creates a predicate that can be used to determine if a given n
 
 ## Combining predicates using a logical AND
 
-and method
+A static method that returns a predicate that combines the result of 2 predicates by means of a logical AND.
+
+```java
+  Predicate<Integer> isNotZero = e -> e != 0;
+  Predicate<Integer> even = e -> e % 2 == 0;
+  Predicate<Integer> isNotZeroAndEven = isNotZero.and(even);
+  isNotZeroAndEven.test(2);
+```
+
+The example above combines the `isNotZero` predicate and the `even` predicate together to construct the `isNotZeroAndEven` predicate.
 
 ## Combining predicates using a logical OR
 
