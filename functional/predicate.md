@@ -1,8 +1,8 @@
 # Predicate
 
-## Object form of a Predicate
+## Class form of a predicate
 
-A predicate can be written in object form as seen below.
+A predicate can be written in class form as seen below.
 
 ```java
   public class EvenPredicate implements Predicate<Integer> {
@@ -13,7 +13,7 @@ A predicate can be written in object form as seen below.
   }
 ```
 
-The example above creates a predicate using the object form and it can be used to test whether an integer is odd or even.
+The example above defines the class `EvenPredicate` and it can be used to test whether an integer is odd or even.
 
 ## Lambda expression form of a predicate
 
@@ -38,7 +38,15 @@ The example above illustrates how the predicate can be used to test if a given i
 
 ## Negating a predicate
 
-negate method
+A static method that wraps an existing predicate and negates the boolean result. See for an example below.
+
+```java
+  Predicate<Integer> even = e -> e % 2 == 0;
+  Predicate<Integer> notEven = Predicate.not(even);
+  notEven(1);
+```
+
+The example above illustrates how to negate the `even` predicate making it the `notEven` predicate as illustrated.
 
 ## Testing equality using a predicate
 
