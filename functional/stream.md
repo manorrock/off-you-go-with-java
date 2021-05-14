@@ -1,5 +1,14 @@
 # Stream
 
+## Counting the number of elements
+
+When processing a stream you might want to know how large the stream is. The example below shows you how.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  System.out.println(Arrays.stream(integers).count());
+```
+
 ## Filtering out elements
 
 When processing a stream there are times you would want to filter out certain elements that do not meet the right criteria. Here is where a predicate comes in to determine whether or not a given element matches. If it matches it is retained, if it does not it is filtered out. See for an example below.
