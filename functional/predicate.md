@@ -38,7 +38,7 @@ The example above illustrates how the predicate can be used to test if a given i
 
 ## Negating a predicate
 
-A static method that wraps an existing predicate and negates the boolean result. See for an example below.
+The `Predicate` class has a static method that wraps an existing predicate and negates the boolean result. See for an example below.
 
 ```java
   Predicate<Integer> even = e -> e % 2 == 0;
@@ -50,7 +50,7 @@ The example above illustrates how to negate the `even` predicate making it the `
 
 ## Testing equality using a predicate
 
-A static method that returns a predicate that will perform an `.equals` check against the given object.
+The `Predicate` class has a static method that returns a predicate that will perform an `.equals` check against the given object.
 
 ```java
   Predicate<Integer> isZero = Predicate.isEqual(0);
@@ -61,7 +61,7 @@ The example above creates a predicate that can be used to determine if a given n
 
 ## Combining predicates using a logical AND
 
-A static method that returns a predicate that combines the result of 2 predicates by means of a logical AND.
+The `Predicate` class has a static method that returns a predicate that combines the result of 2 predicates by means of a logical AND.
 
 ```java
   Predicate<Integer> isNotZero = e -> e != 0;
@@ -74,7 +74,16 @@ The example above combines the `isNotZero` predicate and the `even` predicate to
 
 ## Combining predicates using a logical OR
 
-or method
+The `Predicate` class has a static method that returns a predicate that combines the result of 2 predicates by means of a logical OR.
+
+```java
+  Predicate<Integer> isZero = e -> e == 0;
+  Predicate<Integer> even = e -> e % 2 == 0;
+  Predicate<Integer> isZeroOrEven = isZero.or(even);
+  isZeroOrEven.test(2);
+```
+
+The example above combines the `isZero` predicate and the `even` predicate together to construct the `isZeroOrEven` predicate.
 
 ### References
 

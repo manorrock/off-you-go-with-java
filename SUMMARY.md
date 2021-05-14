@@ -10,6 +10,7 @@
   * [Negating a predicate](functional/predicate.md#negating-a-predicate)
   * [Testing equality using a predicate](functional/predicate.md#testing-equality-using-a-predicate)
   * [Combining predicates using a logical AND](functional/predicate.md#combining-predicates-using-a-logical-and)
+  * [Combining predicates using a logical OR](functional/predicate.md#combining-predicates-using-a-logical-or)
 * [Stream](streams/stream.md)
   * [Collecting](streams/stream.md#collecting)
   * [Combining](streams/stream.md#combining)
