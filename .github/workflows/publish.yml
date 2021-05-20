@@ -15,7 +15,7 @@ jobs:
         node-version: '10.x'
     - name: 'Installing GitBook CLI'
       run: npm install -g gitbook-cli
-    - name: 'Generating book'
+    - name: 'Generating GitBook'
       run: |
         gitbook install
         gitbook build
