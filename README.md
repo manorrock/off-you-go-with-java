@@ -4,7 +4,7 @@ As with all books you are expecting an introduction. Maybe you are looking for w
 
 ## Note for Individuals
 
-If you like what you see and you want to see this book be kept up to date please considering sponsoring. To do so go to https://github.com/manorrock/off-you-go-with-java-book.git and click the Sponsor button. Either sponsor a monthly amount, or pick your one time amount!
+If you like what you see and you want to see this book be kept up to date please consider sponsoring. To do so go to https://github.com/manorrock/off-you-go-with-java-book.git and click the Sponsor button. Either sponsor a monthly amount, or pick any one time amount!
 
 ## Note for Educators / Companies
 
