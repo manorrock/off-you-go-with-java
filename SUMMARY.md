@@ -16,7 +16,7 @@
   * [Combining](streams/stream.md#combining)
   * [Counting the number of elements](functional/stream.md#counting-the-number-of-elements)
   * [Getting the distinct elements](functional/stream.md#getting-the-distinct-elements)
-  * [Empty](streams/stream.md#empty)
+  * [Create an empty stream](functional/stream.md#create-an-empty-stream)
   * [Filtering out elements](functional/stream.md#filtering-out-elements)
   * [Collectors](streams/collectors.md)
   * [StreamSupport](streams/stream-support.md)

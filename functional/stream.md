@@ -22,6 +22,15 @@ When processing a stream you might want to only get the elements that are distin
 
 The example above creates a stream that only contain distinct elements from the original stream.
 
+## Create an empty stream
+
+Sometimes you want to start with an empty stream. See below how you would start with such a stream.
+
+```java
+  Stream
+    .empty();
+```
+
 ## Filtering out elements
 
 When processing a stream there are times you would want to filter out certain elements that do not meet the right criteria. Here is where a predicate comes in to determine whether or not a given element matches. If it matches it is retained, if it does not it is filtered out. See for an example below.

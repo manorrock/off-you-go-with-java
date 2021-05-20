@@ -1,10 +1,10 @@
-name: gitbook
+name: publish
 on:
   push:
     branches:
       - master
 jobs:
-  gitbook:
+  publish:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,7 +15,7 @@ jobs:
         node-version: '10.x'
     - name: 'Installing GitBook CLI'
       run: npm install -g gitbook-cli
-    - name: 'Generating GitBook'
+    - name: 'Generating GitBook website'
       run: |
         gitbook install
         gitbook build
