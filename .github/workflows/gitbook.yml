@@ -1,10 +1,10 @@
-name: publish
+name: gitbook
 on:
   push:
     branches:
       - master
 jobs:
-  publish:
+  gitbook:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
