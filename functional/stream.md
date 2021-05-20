@@ -1,5 +1,17 @@
 # Stream
 
+## Collecting results
+
+At the end of processing a stream often times you would need to collect the results.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5};
+  Arrays.stream(integers)
+    .collect(Collectors.toList());
+```
+
+The example above collects the stream results into a List.
+
 ## Counting the number of elements
 
 When processing a stream you might want to know how large the stream is. The example below shows you how.
