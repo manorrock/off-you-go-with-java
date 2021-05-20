@@ -9,6 +9,19 @@ When processing a stream you might want to know how large the stream is. The exa
   System.out.println(Arrays.stream(integers).count());
 ```
 
+## Getting the distinct elements
+
+When processing a stream you might want to only get the elements that are distinct. 
+
+```java
+  int[] integers = { 1, 3, 7, 5, 1, 5, 11}
+  Arrays.stream(integers)
+    .distinct()
+    .forEach(System.out::println);
+```
+
+The example above creates a stream that only contain distinct elements from the original stream.
+
 ## Filtering out elements
 
 When processing a stream there are times you would want to filter out certain elements that do not meet the right criteria. Here is where a predicate comes in to determine whether or not a given element matches. If it matches it is retained, if it does not it is filtered out. See for an example below.
