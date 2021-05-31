@@ -13,10 +13,13 @@
   * [Combining predicates using a logical OR](functional/predicate.md#combining-predicates-using-a-logical-or)
 * [Stream](functional/stream.md)
   * [Collecting results](functional/stream.md#collecting-results)
-  * [Combining](streams/stream.md#combining)
   * [Counting the number of elements](functional/stream.md#counting-the-number-of-elements)
   * [Getting the distinct elements](functional/stream.md#getting-the-distinct-elements)
   * [Create an empty stream](functional/stream.md#create-an-empty-stream)
   * [Filtering out elements](functional/stream.md#filtering-out-elements)
-  * [Collectors](streams/collectors.md)
-  * [StreamSupport](streams/stream-support.md)
+<!--
+ TODO
+  Combining
+  Collectors
+  StreamSupport
+ -->
