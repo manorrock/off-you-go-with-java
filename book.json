@@ -1,5 +1,18 @@
 {
     "plugins": [
+        "analytics",
         "hints"
-    ]
+    ],
+
+    "pluginsConfig": {
+		"analytics": {
+			"context": [
+				{
+					"vendor": "google",
+					"token": "G-ZEXD7P3MYQ",
+					"base": "https://www.manorrock.com/book/off-you-go-with-java/"
+				}
+			]
+		}
+	}
 }
