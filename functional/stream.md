@@ -5,7 +5,7 @@
 At the end of processing a stream often times you would need to collect the results.
 
 ```java
-  int[] integers = { 1, 2, 3, 4, 5};
+  int[] integers = { 1, 2, 3, 4, 5 };
   Arrays.stream(integers)
     .collect(Collectors.toList());
 ```
@@ -17,7 +17,7 @@ The example above collects the stream results into a List.
 When processing a stream you might want to know how large the stream is. The example below shows you how.
 
 ```java
-  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
   System.out.println(Arrays.stream(integers).count());
 ```
 
@@ -26,7 +26,7 @@ When processing a stream you might want to know how large the stream is. The exa
 When processing a stream you might want to only get the elements that are distinct. 
 
 ```java
-  int[] integers = { 1, 3, 7, 5, 1, 5, 11}
+  int[] integers = { 1, 3, 7, 5, 1, 5, 11 };
   Arrays.stream(integers)
     .distinct()
     .forEach(System.out::println);
@@ -48,13 +48,27 @@ Sometimes you want to start with an empty stream. See below how you would start 
 When processing a stream there are times you would want to filter out certain elements that do not meet the right criteria. Here is where a predicate comes in to determine whether or not a given element matches. If it matches it is retained, if it does not it is filtered out. See for an example below.
 
 ```java
-  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
   Arrays.stream(integers)
     .filter(e -> e % 2 == 0)
     .forEach(System.out::println);
 ```
 
 The example above filters out all odd integers out of the given stream.
+
+## Limit the number of elements
+
+When processing a stream there are times you would want to limit the number of elements to a specific size. See for an example below.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .limit(5)
+    .forEach(System.out::println);
+```
+
+The example above will only print the first 5 elements.
+
 
 ### References
 
