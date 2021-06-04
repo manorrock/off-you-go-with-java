@@ -69,6 +69,18 @@ When processing a stream there are times you would want to limit the number of e
 
 The example above will only print the first 5 elements.
 
+## Skipping a number of elements
+
+When processing a stream there are times you would want to skip a number of elements. See for an example below.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .skip(5)
+    .forEach(System.out::println);
+```
+
+The example above will start printing the elements after skipping the first 5 elements.
 
 ### References
 

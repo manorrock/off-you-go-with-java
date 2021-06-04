@@ -18,6 +18,7 @@
   * [Create an empty stream](functional/stream.md#create-an-empty-stream)
   * [Filtering out elements](functional/stream.md#filtering-out-elements)
   * [Limit the number of elements](functional/stream.md#limit-the-number-of-elements)
+  * [Skipping a number of elements](functional/stream.md#skipping-a-number-of-elements)
 <!--
  TODO
   Combining
