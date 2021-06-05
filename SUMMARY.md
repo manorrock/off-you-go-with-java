@@ -19,6 +19,7 @@
   * [Filtering out elements](functional/stream.md#filtering-out-elements)
   * [Limit the number of elements](functional/stream.md#limit-the-number-of-elements)
   * [Skipping a number of elements](functional/stream.md#skipping-a-number-of-elements)
+  * [Find the first element](functional/stream.md#find-the-first-element)
 <!--
  TODO
   Combining

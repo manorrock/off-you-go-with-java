@@ -82,6 +82,22 @@ When processing a stream there are times you would want to skip a number of elem
 
 The example above will start printing the elements after skipping the first 5 elements.
 
+## Find the first element
+
+If you ever just want to get the first element of the stream see the example below.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .findFirst()
+    .stream()
+    .forEach(System.out::println);
+```
+
+The example above should print just the first element, wich in this case is 1.
+
+Note that findFirst returns an Optional as the stream could be empty and thus not have a first element.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
