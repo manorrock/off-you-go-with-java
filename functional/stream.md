@@ -94,7 +94,7 @@ If you ever just want to get the first element of the stream see the example bel
     .forEach(System.out::println);
 ```
 
-The example above should print just the first element, wich in this case is 1.
+The example above should print just the first element, which in this case is 1.
 
 Note that findFirst returns an Optional as the stream could be empty and thus not have a first element.
 
