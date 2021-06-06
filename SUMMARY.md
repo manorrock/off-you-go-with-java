@@ -20,6 +20,7 @@
   * [Limit the number of elements](functional/stream.md#limit-the-number-of-elements)
   * [Skipping a number of elements](functional/stream.md#skipping-a-number-of-elements)
   * [Find the first element](functional/stream.md#find-the-first-element)
+  * [Determine if all elements match the specified predicate](functional/stream.md#determine-if-all-elements-match-the-specified-predicate)
 <!--
  TODO
   Combining

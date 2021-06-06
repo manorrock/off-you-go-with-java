@@ -98,6 +98,18 @@ The example above should print just the first element, which in this case is 1.
 
 Note that findFirst returns an Optional as the stream could be empty and thus not have a first element.
 
+## Determine if all elements match the specified predicate
+
+If you want to see if all elements math a specific condition you can use a predicate with allMatch to do so. See below.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .allMatch(n -> n > 0);
+```
+
+The example above determines if all the elements in the stream are greater than 0, which is true in this particular case.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
