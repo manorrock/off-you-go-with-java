@@ -110,6 +110,18 @@ If you want to see if all elements math a specific condition you can use a predi
 
 The example above determines if all the elements in the stream are greater than 0, which is true in this particular case.
 
+## Determine if any of the elements match the specified predicate
+
+If you want to know if any elements matches a specific condition you can use a predicate with anyMatch to do so. For an example see below.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .anyMatch(n -> n == 1);
+```
+
+The example above determines if any of the elements equals to 1, which is true for this example.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
