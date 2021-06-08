@@ -22,6 +22,7 @@
   * [Find the first element](functional/stream.md#find-the-first-element)
   * [Determine if all elements match the specified predicate](functional/stream.md#determine-if-all-elements-match-the-specified-predicate)
   * [Determine if any of the elements match the specified predicate](functional/stream.md#determine-if-any-of-the-elements-match-the-specified-predicate)
+  * [Randomly get one of the elements of your stream](functional/stream.md#randomly-get-one-of-the-elements-of-your-stream)
 <!--
  TODO
   Combining

@@ -122,6 +122,19 @@ If you want to know if any elements matches a specific condition you can use a p
 
 The example above determines if any of the elements equals to 1, which is true for this example.
 
+## Randomly get one of the elements of your stream
+
+If you want a random element from your stream you can use findAny. The example below illustrates how you would do so.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .findAny()
+    .getAsInt();
+```
+
+Note since the element is random it could be any of the elements in the stream described above.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
