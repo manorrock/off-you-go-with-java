@@ -135,6 +135,26 @@ If you want a random element from your stream you can use findAny. The example b
 
 Note since the element is random it could be any of the elements in the stream described above.
 
+## Generate a stream using a Supplier
+
+You can generate a stream using a Supplier.
+
+```java
+  Stream<Integer> stream = Stream.generate(
+      new Supplier<Integer>() { 
+          Random random = new Random();
+          public Integer get() { 
+              return random.nextInt();
+          }
+      } 
+  );
+  stream
+    .limit(10)
+    .forEach(System.out::println);
+```
+
+The example above create a stream using a Supplier that uses the Random class to generate random integers and it prints the first 10.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
