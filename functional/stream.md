@@ -155,6 +155,19 @@ You can generate a stream using a Supplier.
 
 The example above create a stream using a Supplier that uses the Random class to generate random integers and it prints the first 10.
 
+## Combining streams together
+
+Using the concat method you can combine streams together.
+
+```java
+  Stream integers1 = Arrays.stream(new Object[] { 1, 2, 3, 4, 5 });
+  Stream integers2 = Arrays.stream(new Object[] { 6, 7, 8, 9, 10 });
+  Stream integers = Stream.concat(integers1, integers2);
+  integers.count();
+```
+
+The example above combines the two streams together and counts the number of elements. In this particular case it would return 10.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)
