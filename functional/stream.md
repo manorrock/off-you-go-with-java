@@ -168,7 +168,7 @@ Using the concat method you can combine streams together.
 
 The example above combines the two streams together and counts the number of elements. In this particular case it would return 10.
 
-## Determine the max of the stream
+## Determine the maximum of the stream
 
 Sometimes you would want to know the maximum of the stream. The following examples shows you how to do that.
 
@@ -180,6 +180,19 @@ Sometimes you would want to know the maximum of the stream. The following exampl
 ```
 
 For the example above the maximum is 10 as this is a stream of integers.
+
+## Determine the minimum of the stream
+
+Sometimes you would want to know the minimum of the stream. The following examples shows you how to do that.
+
+```java
+  int[] integers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+  Arrays.stream(integers)
+    .min()
+    .getAsInt();
+```
+
+For the example above the minimum is 1 as this is a stream of integers.
 
 ### References
 

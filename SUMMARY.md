@@ -25,7 +25,8 @@
   * [Randomly get one of the elements of your stream](functional/stream.md#randomly-get-one-of-the-elements-of-your-stream)
   * [Generate a stream using a Supplier](functional/stream.md#generate-a-stream-using-a-supplier)
   * [Combining streams together](functional/stream.md#combining-streams-together)
-  * [Determine the max of the stream](functional/stream.md#determine-the-max-of-the-stream)
+  * [Determine the maximum of the stream](functional/stream.md#determine-the-maximum-of-the-stream)
+  * [Determine the minimum of the stream](functional/stream.md#determine-the-minimum-of-the-stream)
 <!--
  TODO
   Collectors
