@@ -27,8 +27,8 @@
   * [Combining streams together](functional/stream.md#combining-streams-together)
   * [Determine the maximum of the stream](functional/stream.md#determine-the-maximum-of-the-stream)
   * [Determine the minimum of the stream](functional/stream.md#determine-the-minimum-of-the-stream)
+* [StreamSupport](functional/stream-support.md)
 <!--
  TODO
   Collectors
-  StreamSupport
  -->
