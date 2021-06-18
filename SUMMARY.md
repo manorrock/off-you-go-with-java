@@ -12,6 +12,7 @@
   * [Combining predicates using a logical AND](functional/predicate.md#combining-predicates-using-a-logical-and)
   * [Combining predicates using a logical OR](functional/predicate.md#combining-predicates-using-a-logical-or)
 * [Stream](functional/stream.md)
+  * [Iterate over each element in the stream](functional/stream.md#iterate-over-each-element-in-the-stream)
   * [Collecting results](functional/stream.md#collecting-results)
   * [Counting the number of elements](functional/stream.md#counting-the-number-of-elements)
   * [Getting the distinct elements](functional/stream.md#getting-the-distinct-elements)

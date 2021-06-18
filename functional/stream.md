@@ -1,5 +1,17 @@
 # Stream
 
+## Iterate over each element in the stream
+
+Often times you would want to do something which each element in the stream. The forEach method is your friend here.
+
+```java
+int[] integers = { 1, 3, 7, 5, 1, 5, 11 };
+  Arrays.stream(integers)
+    .forEach(System.out::println);
+```
+
+The example above prints each element to System.out.
+
 ## Collecting results
 
 At the end of processing a stream often times you would need to collect the results.
