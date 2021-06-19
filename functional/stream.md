@@ -206,6 +206,20 @@ Sometimes you would want to know the minimum of the stream. The following exampl
 
 For the example above the minimum is 1 as this is a stream of integers.
 
+## Drop a number of elements based on a predicate
+
+When processing a stream you might want to drop a number of element matching a predicate until it no longer matches. 
+
+```java
+  int[] integers = { 1, 3, 7, 5, 1, 5, 11 };
+  Arrays.stream(integers)
+    .dropWhile(i -> i < 7)
+    .forEach(System.out::println);
+```
+
+The example above creates a stream that drops all elements less than 7 at the beginning of the stream until it no
+longer matches the predicate.
+
 ### References
 
 1. [JavaDoc](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/stream/Stream.html)

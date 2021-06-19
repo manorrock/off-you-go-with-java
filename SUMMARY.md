@@ -28,6 +28,7 @@
   * [Combining streams together](functional/stream.md#combining-streams-together)
   * [Determine the maximum of the stream](functional/stream.md#determine-the-maximum-of-the-stream)
   * [Determine the minimum of the stream](functional/stream.md#determine-the-minimum-of-the-stream)
+  * [Drop a number of elements based on a predicate](functional/stream.md#drop-a-number-of-elements-based-on-a-predicate)
 * [StreamSupport](functional/stream-support.md)
 <!--
  TODO
