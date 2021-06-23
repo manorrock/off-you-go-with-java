@@ -33,4 +33,4 @@
 
 ## Changes
 
-* [Changes from Java 15 to Java 15](changes/java16.md)
+* [Changes from Java 15 to Java 16](changes/java16.md)
