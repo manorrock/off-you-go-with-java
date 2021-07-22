@@ -31,6 +31,8 @@
   * [Drop a number of elements based on a predicate](functional/stream.md#drop-a-number-of-elements-based-on-a-predicate)
 * [StreamSupport](functional/stream-support.md)
 
-## Java 16
+## Language
 
-* [Records](16/records.md)
+* [Records](language/records.md)
+  * [Constructor](language/records.md#constructor)
+

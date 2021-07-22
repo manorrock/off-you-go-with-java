@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: ${{ secrets.GIT_PASSWORD }}
+        token: ${{ secrets.GIT_TOKEN }}
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
