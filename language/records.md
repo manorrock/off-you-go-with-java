@@ -12,5 +12,28 @@ information.
 ```java
   record Person(
     String firstName,
-    String lastName)
+    String lastName) {
+  }
 ```
+
+## Overriding default constructor
+
+The example below builds on the previos example to add some validation to the
+default constructor.
+
+```java
+  record Person(
+    String firstName,
+    String lastName) {
+ 
+    Person {
+      if (firstName == null) {
+        throw nre IllegalArgumentException("First name cannot be null");
+      }
+    }
+  }
+```
+
+### References
+
+1. [JEP 395: Records](https://openjdk.java.net/jeps/395)
